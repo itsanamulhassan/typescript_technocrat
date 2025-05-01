@@ -26,8 +26,24 @@ if (typeof unknownValue === "string") {
 }
 
 // practice
+// Primitive Types
+// Primitive types are the most basic data types in TypeScript. They include number, string, boolean, null, undefined, and symbol. These types represent single values and are immutable.
 const myName: string = "Anamul Hassan";
 const myAge: number = 29;
 const isMarried: boolean = false;
 const wifeName: null = null;
 const babies: undefined = undefined;
+const myId: symbol = Symbol("id");
+
+// Non-Primitive Types
+// Non-primitive types are more complex data types that can hold multiple values or collections of values. They include arrays, objects, and tuples.
+const myHobbies: string[] = ["Reading", "Coding", "Watching Movies"];
+const myAddress: { city: string; country: string } = {
+  city: "Dhaka",
+  country: "Bangladesh",
+};
+const myTuple: [string, number] = ["Anamul", 29]; // Tuple with a string and a number
+const myMixedInfo: (string | number)[] = ["Anamul", 29, "Dhaka"];
+
+const myWayForGreeting: (name: string) => string = (name) =>
+  "Hello, " + name + "!";
