@@ -55,4 +55,7 @@
       age: 25,
     },
   ];
+
+  type GenericTuple<T1, T2> = [T1, T2];
+  const user: GenericTuple<string, number> = ["John Doe", 25];
 }
